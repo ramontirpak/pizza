@@ -6,6 +6,7 @@ function szallasok() {
 `
 
 fetch("https://nodejs.sulla.hu/data")
+.then(data = > data.json())
 .then(function(datas) {
     for (let i = 0; i < datas.length; i++) {
         document.getElementById('container').innerHTML += `    
